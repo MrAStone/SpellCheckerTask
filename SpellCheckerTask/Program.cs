@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            StreamReader words = new StreamReader("WordsFile.txt");
+            using  StreamReader words = new("WordsFile.txt");
             Console.Write(words.ReadToEnd());
         }
     }
